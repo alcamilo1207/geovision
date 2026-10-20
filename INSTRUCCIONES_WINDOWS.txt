@@ -1,0 +1,33 @@
+======================================================================
+  GEOVISION PLANT EXTRACTOR — GEMELO DIGITAL & QRA (U044)
+  Instrucciones para Despliegue en Windows
+======================================================================
+
+1. REQUISITO PREVIO (Solo si la máquina no tiene Python):
+   - Tener instalado Python 3.10, 3.11 o 3.12 (https://www.python.org/downloads/)
+   - *MUY IMPORTANTE*: Durante la instalación de Python, asegúrese de marcar
+     la casilla que dice:
+     [X] "Add python.exe to PATH" (Agregar Python al PATH del sistema)
+
+2. CÓMO INICIAR LA APLICACIÓN:
+   - Simplemente haga DOBLE CLIC en el archivo:
+     👉 "INICIAR_GEOVISION.bat"
+
+   - El archivo se encargará automáticamente de:
+     a) Detectar Python en su equipo.
+     b) Verificar las librerías necesarias (las instala automáticamente en la 1ra ejecución).
+     c) Iniciar el servidor local (FastAPI / Uvicorn).
+     d) Abrir automáticamente su navegador web predeterminado en:
+        http://localhost:8080
+
+3. PESTAÑAS Y FUNCIONALIDADES DISPONIBLES:
+   - Pestaña 1: Plot Plan GeoTIFF, Satélite y Base de Datos del Gemelo Digital (CRUD).
+   - Pestaña 2: Simulación de Consecuencias API 581, Radios Térmicos/Sobrepresión e Isosuperficies.
+   - Pestaña 3: Modelación de Efecto Dominó en Red Compleja (OpenSRANE & Probit Cozzani).
+   - Pestaña 4: Rosa de los Vientos Polar SVG Interactiva (Meteoblue) y Estándares QRA (BEVI / Purple / NIST).
+   - Pestaña 5: Criticidad Financiera Máxima (PML), Lucro Cesante (BI) y Matriz de Daño SQLite.
+
+4. CÓMO DETENER LA APLICACIÓN:
+   - En la ventana negra de la consola que se abrió, presione las teclas:
+     CTRL + C
+   - O simplemente cierre la ventana de la consola.
